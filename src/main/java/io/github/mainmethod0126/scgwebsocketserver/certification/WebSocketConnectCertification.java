@@ -14,14 +14,18 @@ public class WebSocketConnectCertification implements HandshakeInterceptor {
     public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler,
             Map<String, Object> attributes) throws Exception {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'beforeHandshake'");
+        // throw new UnsupportedOperationException("Unimplemented method
+        // 'beforeHandshake'");
+        return true;
     }
 
     @Override
     public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler,
             @Nullable Exception exception) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'afterHandshake'");
+        // throw new UnsupportedOperationException("Unimplemented method
+        // 'afterHandshake'");
+
     }
 
 }
