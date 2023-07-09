@@ -23,8 +23,7 @@ public class WebSocketConnectCertification implements HandshakeInterceptor {
     public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler,
             @Nullable Exception exception) {
         // TODO Auto-generated method stub
-        // throw new UnsupportedOperationException("Unimplemented method
-        // 'afterHandshake'");
+        System.out.println("Connected!");
 
     }
 

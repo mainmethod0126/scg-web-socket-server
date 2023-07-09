@@ -29,7 +29,7 @@ public class RoomController {
     }
 
     @MessageMapping("/chat/{roomId}") // 클라이언트에서 '/chat.sendMessage'로 메시지 전송 요청을 보내면 이 핸들러가 호출됨
-    @SendTo("/topic/{roomId}") // '/topic/public'으로 메시지 전송
+    @SendTo("/chat/{roomId}") // '/topic/public'으로 메시지 전송
     public String sendMessage(String chatMessage) {
         return chatMessage;
     }
