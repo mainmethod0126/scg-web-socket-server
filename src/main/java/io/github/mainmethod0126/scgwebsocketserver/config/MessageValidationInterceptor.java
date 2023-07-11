@@ -7,7 +7,11 @@ import org.springframework.messaging.simp.stomp.StompCommand;
 import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 import org.springframework.messaging.support.ChannelInterceptor;
 
+import io.github.mainmethod0126.scgwebsocketserver.domain.room.service.RoomService;
+
 public class MessageValidationInterceptor implements ChannelInterceptor {
+
+    private final RoomService roomService;
 
     @Override
     @Nullable
@@ -21,6 +25,10 @@ public class MessageValidationInterceptor implements ChannelInterceptor {
         }
 
         return message;
+    }
+
+    private boolean isExistChatRoom(String roomId) {
+
     }
 
 }

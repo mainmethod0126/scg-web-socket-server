@@ -10,14 +10,14 @@ import lombok.Setter;
 @Setter
 public class Room {
 
-    private String name;
     private String id;
+    private String name;
     private Set<String> participantIds;
 
     @Builder
-    public Room(String name, String id, Set<String> participantIds) {
-        this.name = name;
+    public Room(String id, String name, Set<String> participantIds) {
         this.id = id;
+        this.name = name;
         this.participantIds = participantIds;
     }
 
